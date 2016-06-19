@@ -175,6 +175,8 @@ public class ScreenReceiver {
 	 */
 	public void addSimpleListener(final String title){
 		final VideoMediaStreamImpl videoStream = (VideoMediaStreamImpl) mediaStream;
+		final ScreenReceiver reciver = this;
+		
 		videoStream.addVideoListener(new VideoListener() {
 
 			@Override
@@ -199,6 +201,7 @@ public class ScreenReceiver {
 			public void videoRemoved(VideoEvent event) {
 				System.out.println("The video has been removed");
 				JOptionPane.showMessageDialog(null, "分享巳經停止!");
+				reciver.close();
 			}
 
 			@Override

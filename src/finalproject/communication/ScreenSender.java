@@ -164,7 +164,7 @@ public class ScreenSender {
 	 * Stops the transmission if already started
 	 */
 	public void stop() {
-		mediaStream.stop();
+		mediaStream.close();
 	}
 
 	

@@ -16,6 +16,6 @@ public class VideoFrame extends JFrame {
 		// vc.setSize(5, 5);
 		this.add(vc);
 		this.pack();
-		// this.setSize(1000, 1000);
+		this.setSize(800, 800);
 	}
 }
