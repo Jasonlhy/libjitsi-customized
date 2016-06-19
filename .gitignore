@@ -1,0 +1,11 @@
+/classes
+/dist
+/.idea
+/.settings/*
+/target
+libjitsi.jar
+*.swp
+*.class
+.classpath
+.project
+libjitsi.iml
